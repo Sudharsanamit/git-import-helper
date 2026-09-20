@@ -457,10 +457,10 @@ function ProductDetailPage() {
                       </strong>
                       <Link
                         to="/solutions/$slug"
-                        params={{ slug: productSolutionsMap[product.id].id }}
+                        params={{ slug: productSolutionsMap[product.id]!.id }}
                         className="text-brand-blue font-semibold hover:text-brand-green underline underline-offset-2 transition-colors inline-flex items-center gap-1"
                       >
-                        <span>{productSolutionsMap[product.id].title}</span>
+                        <span>{productSolutionsMap[product.id]!.title}</span>
                         <ArrowRight className="h-3 w-3" />
                       </Link>
                     </div>

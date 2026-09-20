@@ -107,7 +107,7 @@ export function EnquiryForm({
     setErrorMessage("");
 
     const accessKey =
-      import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "f76e2123-378c-4646-af8b-e27a8a749a63";
+      import.meta.env['VITE_WEB3FORMS_ACCESS_KEY'] || "f76e2123-378c-4646-af8b-e27a8a749a63";
 
     const payload = {
       access_key: accessKey,

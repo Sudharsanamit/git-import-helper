@@ -115,7 +115,7 @@ export default {
     const url = new URL(request.url);
     const hostHeader =
       request.headers.get("x-forwarded-host") || request.headers.get("host") || url.hostname;
-    const hostname = hostHeader.split(":")[0].toLowerCase();
+    const hostname = (hostHeader.split(":")[0] ?? "").toLowerCase();
 
     if (hostname === "vchemicsindia.com") {
       url.hostname = "www.vchemicsindia.com";

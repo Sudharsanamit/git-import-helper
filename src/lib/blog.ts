@@ -29,10 +29,10 @@ export function isGenericBlogImage(post: { imageKey?: string; image?: string }):
     return (GENERIC_BLOG_IMAGE_KEYS as readonly string[]).includes(post.imageKey);
   }
   if (
-    post.image === blogImages.admixtures ||
-    post.image === blogImages.waterproofing ||
-    post.image === blogImages.grouts ||
-    post.image === blogImages.microconcrete
+    post.image === blogImages['admixtures'] ||
+    post.image === blogImages['waterproofing'] ||
+    post.image === blogImages['grouts'] ||
+    post.image === blogImages['microconcrete']
   ) {
     return true;
   }

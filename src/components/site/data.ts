@@ -444,8 +444,8 @@ export interface SolutionItem {
   stages: { name: string; desc: string }[];
   applications: string[];
   metrics: string;
-  workGalleryType?: "photos" | "diagrams";
-  workGallery?: WorkGalleryStep[];
+  workGalleryType?: "photos" | "diagrams" | undefined;
+  workGallery?: WorkGalleryStep[] | undefined;
 }
 
 export const allSolutions: SolutionItem[] = [

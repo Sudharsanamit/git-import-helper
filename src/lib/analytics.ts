@@ -125,8 +125,8 @@ export function trackCallClick(
  */
 export function trackEmailClick(
   params: {
-    email?: string;
-    source?: string;
+    email?: string | undefined;
+    source?: string | undefined;
   } = {},
 ) {
   trackEvent("Email_click", {
